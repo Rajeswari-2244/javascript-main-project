@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.commerce{
+    margin-left: 50px;
+}
+.main{
+    background-image: url("../images/main.png");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    width: 700px;
+    height: 511px;
+  }
+
+  .text{
+    color: white;
+    /* position: relative; */
+    left: 50px;
+    bottom: -100px;
+    top: 190px;
+  }
+  .total_form{
+    
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contact_us{
+    text-align: center;
+
+}
+#exampleInputPassword1{
+    width: 285px;
+    height: 140px;
+    border-radius: 5px;
+    border: 1px solid rgba(233, 221, 221, 0.948);
+}
+.form-label{
+   
+    width: 200px;
+}
+.send{
+    margin-left: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    
+}
+.end_part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
