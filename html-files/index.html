@@ -34,64 +34,39 @@
               
             </ul>
             <form class="d-flex ms-auto me-5">
+              <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-right-to-bracket ms-2"></i>Login</button></a>
+              <a href="#"><button type="button" class="btn btn-outline-dark ms-3"><i class="fa-solid fa-user-plus ms-2"></i>Register</button></a>
+             
+              <a href="add-to-cart.html"><button type="button" class="btn btn-outline-dark ms-3"><i class="fa-solid fa-cart-shopping"></i>Cart(0)</button></a>
               <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
                <!-- <ul class= "navbar-nav ms-auto mb-2 mb-lg-0 ">
                 <li><a href="./add-to-cart.html"><i class="fa-solid fa-cart-shopping text-dark border border-dark p-2 rounded">Cart(0)</i></a></li>
                </ul> -->
-              <!-- <button class="btn btn-outline-success border border-dark text-dark " type="submit"><i class="fa-solid fa-cart-shopping"></i><a href='./add-to-cart.html' class="text-decoration-none text-dark ms-2">Cart(0)</a></button>  -->
-              <button type="button" class="btn btn-light border border-dark rounded "><i class="fa-solid fa-right-to-bracket"></i><a href='#' class="text-decoration-none text-dark ms-2 ">Login</a></button>
-              <button type="button" class="btn btn-light border border-dark ms-3 rounded"><i class="fa-solid fa-address-card"></i><a href='#' class="text-decoration-none text-dark ms-2">Register</a></button>
-              <button type="button" class="btn btn-light border border-dark ms-3 rounded"><i class="fa-solid fa-cart-shopping"></i><a href='../html-files/add-to-cart.html' class="text-decoration-none text-dark ms-2">Cart(0)</a></button>   
+              <!-- <button class="btn btn-outline-light border border-dark text-dark " type="submit"><i class="fa-solid fa-cart-shopping"></i><a href='./add-to-cart.html' class="text-decoration-none text-dark ms-2">Cart(0)</a></button>  -->
+               <!-- <button type="button" class="btn btn-outline-dark">Dark</button>  -->
+              <!-- <button type="button" class="btn btn-outline-dark">Dark</button> -->
+              <!-- <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-cart-shopping"></i><a href='../html-files/add-to-cart.html' class=" ms-2 ">Cart(0)</a></button> -->
+              <!-- <button type="button" class="btn btn-outline-dark border border-dark ms-3 rounded"><i class="fa-solid fa-cart-shopping"></i><a href='../html-files/add-to-cart.html' class="text-decoration-none text-dark ms-2">Cart(0)</a></button>    -->
             </form>
           </div>
         </div>
       </nav>
 
 
-      <!-- hero section starts here
-      <section class="main">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-7">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, suscipit architecto! Tenetur quibusdam incidunt esse adipisci voluptatem similique repudiandae illum. Expedita exercitationem esse beatae perferendis quos corporis cupiditate nostrum omnis.
-              
-            </div>
-          </div>
-        </div>
-      </section> -->
+      
 
-      <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active px-4">
-            <img src="../images/main.png.jpg"  style="border-radius: 10px;"class="d-block w-100" alt="...">
-            <div class="text position-absolute bottom-50 aria-expanded">
-              <p class="fs-5">New Season Arrivals</h><p>
-              <p class="fs-3">This is a wider card with supporting text below as a natural lead-in to additional content . This content is little bit longer</p>
 
-            </div>
-          </div>
-         
-        </div>
+
+      <div class="image mx-4 p-5" style="padding:100px;">
+        <p class="ms-4 fs-3" style="margin-top: 182px;color: white;font-weight: bpld;" >New Season Arrivals<p>
+          <p class="ms-4 fs-5" style=" color: white;">This is a wider card with supporting text below as a natural lead-in to additional content . This content is little bit longer</p>
+
       </div>
 
 <br><br>
 
 
-      <!-- <section class="products">
-         <p class="Latest_products" style="font-size: 50px;margin-left:620px">Latest Products</p><br>
-        <hr style="color:gray" class=" horizantol_line ">
-        <div class="item_components d-flex items" >
-          <div class="item1"><a href="">All</a></div>
-          <div  class="item2"><a href="">Men's Clothing</a></div>
-          <div  class="item3"><a href="">Women's Clothing</a></div>
-          <div  class="item4"><a href="">Jewellary</a></div>
-          <div  class="item5"><a href="">Electronics</a></div>
-         
-          
-         
-        </div>
-
-      </section> -->
+      
 
       <p class="Latest_products d-flex justify-content-center fs-1 fw-bold">Latest Products</p><br>
       <hr style="color:gray" class=" mx-5">
@@ -99,117 +74,23 @@
 
       <div class="d-flex justify-content-center mt-5 mb-5 ">
         <button type="button" class="btn btn-light border border-dark">All</button>
-        <button type="button" class="btn btn-light border border-dark ms-3">Men's Clothing</button>
-        <button type="button" class="btn btn-light border border-dark ms-3">Women's Clothing</button>
-        <button type="button" class="btn btn-light border border-dark ms-3">Jewellary</button>
+        <button type="button" class="btn btn-light border border-dark ms-3" id="categoryButton">Men's Clothing</button>
+        <button type="button" class="btn btn-light border border-dark ms-3" id="womensbtn">Women's Clothing</button>
+        <button type="button" class="btn btn-light border border-dark ms-3 jewel">Jewellary</button>
         <button type="button" class="btn btn-light border border-dark ms-3">Electronics</button>
       </div>
 
       
 
-      <div class="container">
-        <div class="row">
-          <!-- <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-               
-                <li class="list-group-item">A third item</li>
-              </ul>
-              <div class="card-body">
-                <button type="button" class="btn btn-dark">Details</button>
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-               
-                <li class="list-group-item">A third item</li>
-              </ul>
-              <div class="card-body">
-                <button type="button" class="btn btn-dark">Details</button>
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-               
-                <li class="list-group-item">A third item</li>
-              </ul>
-              <div class="card-body">
-                <button type="button" class="btn btn-dark">Details</button>
-                <button type="button" class="btn btn-dark">Add to Cart</button>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-             
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Details</button>
-              <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-          </div>
-
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-             
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Details</button>
-              <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-          </div>
+      
 
 
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-             
-              <li class="list-group-item">A third item</li>
-            </ul>
-            <div class="card-body">
-              <button type="button" class="btn btn-dark">Details</button>
-              <button type="button" class="btn btn-dark">Add to Cart</button>
-            </div>
-          </div> -->
-        </div>
+      <div class="container"></div>
+      <div class="row">
+        
       </div>
+    </div>
+
 
 <br><br>
 
@@ -228,6 +109,7 @@
       
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="../javascript-files/index.js"></script>
+      <!-- <script src="../javascript-files/index1.js"></script> -->
     
 </body>
 </html>

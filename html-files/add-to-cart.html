@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="../html-files/bootstrap.min.css">
+    <link rel="stylesheet" href="../css-files/add-to-cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+        <div class="container-fluid">
+          <a class="navbar-brand lg-ms-5  commerce fw-bold fs-3" href="./index.html">E-Commerce</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navlink">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./products.html">products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex ms-auto me-5">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+               <!-- <ul class= "navbar-nav ms-auto mb-2 mb-lg-0 ">
+                <li><a href="./add-to-cart.html"><i class="fa-solid fa-cart-shopping text-dark border border-dark p-2 rounded">Cart(0)</i></a></li>
+               </ul> -->
+              <!-- <button class="btn btn-outline-success border border-dark text-dark " type="submit"><i class="fa-solid fa-cart-shopping"></i><a href='./add-to-cart.html' class="text-decoration-none text-dark ms-2">Cart(0)</a></button>  -->
+              <button type="button" class="btn btn-light border border-dark rounded "><i class="fa-solid fa-right-to-bracket"></i><a href='#' class="text-decoration-none text-dark ms-2 ">Login</a></button>
+              <button type="button" class="btn btn-light border border-dark ms-3 rounded"><i class="fa-solid fa-address-card"></i><a href='#' class="text-decoration-none text-dark ms-2">Register</a></button>
+              <button type="button" class="btn btn-light border border-dark ms-3 rounded"><i class="fa-solid fa-cart-shopping"></i><a href='../html-files/add-to-cart.html' class="text-decoration-none text-dark ms-2">Cart(0)</a></button>   
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<!-- ------------------------------------------------------------------------------------------------- -->
+<!-- <div class="main_cart">
+  <div class="fs-3 d-flex justify-content-center align-items-center fw-bold">Cart</div>
+  <hr class="mx-5">
+  <p class="d-flex justify-content-center align-items-center fs-1 " style="margin-top: 100px;">Your Cart is Empty</p>
+  <a href="../html-files/index.html" class="text-decoration-none d-flex justify-content-center align-items-center mt-1"><button type="button" class="btn btn-outline-dark ms-3 d-flex justify-content-center align-items-center"><i class="fa-solid fa-arrow-left"></i>Continue Shopping</button></a>
+</div> -->
+
+<div class="total_cart">
+  <div class="items">
+    <img  style="height:200px;width:200px"src="../images/electronics.jpg" alt="">
+    
+
+
+
+  </div>
+  <div class="amount"></div>
+</div>
+
+
+
+
+<!-- footer -->
+<footer>
+  <section class="end_part">
+      <p class="d-flex justify-content-center align-items-center mt-5">Made with <span><i class="fa-solid fa-heart mx-3" style="color: red;"></i></span>by <a href="#" class="text-dark ms-3">AchieversIT</a></p>
+  
+    </section>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="cart_page">
+        <div class="shopping_cart" id="shopping_cart">
+        </div>
+        <div class="label" id="label"></div>
+      </div>
+    
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="../javascript-files/addtocart.js"></script>
+</body>
+</html>
