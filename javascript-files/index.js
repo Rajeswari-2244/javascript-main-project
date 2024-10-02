@@ -136,7 +136,7 @@
 //     `;
 
 //     row.insertAdjacentHTML('beforeend',c)
-//         }
+// //         }
 
 
 //       }
@@ -377,9 +377,14 @@ let allProducts = [];
     fetch('https://fakestoreapi.com/products')
         .then(res => res.json())
         .then(products => {
+        
+         
             allProducts = products;
             // console.log(allProducts )
-            displayProducts(allProducts); // Display all products by default
+            displayProducts(allProducts);
+             // Display all products by default
+
+             
         })
         .catch(error => console.error('Error fetching data:', error));
 
@@ -389,14 +394,46 @@ let allProducts = [];
         container.innerHTML = '';                                                       // Clear the container
         
         products.forEach(product => {
+
+
+          let text = `${product.title}`
+          let finalText;
+
+        let titleTruncate = function(str){
+        if(str.length > 12){
+        finalText = str.substr(0,12) +'...';
+         }
+        //  console.log(finalText);
+    
+         }
+      
+        titleTruncate(text)
+
+
+        ///////////////////////////////////////////////
+
+        let para=`${product.description}`
+function finaltext(str,length=10){
+    if(str.length>length){
+        return str.substr(0,74)+"..."
+    }
+}
+let final=finaltext(para)
+// console.log(final)
+
+
+
+
+
+
           const card = document.createElement('div');
           card.className = 'card';
           card.innerHTML = `<div class="col" style:margin-left:47px>
-          <div class="card  " style="width: 25rem; ">
+          <div class="card  " style="width: 25rem; margin-top:-70px">
             <img src="${product.image}" class="card-img-top p-2" style = 'width: 325px; height:325px;margin-left:17px'>
             <div class="card-body">
-              <h5 class="card-title text-center">${product.title}</h5>
-              <p class="card-text text-center" style="font-size:20px">${product.description}</p>
+              <h5 class="card-title text-center">${finalText}</h5>
+              <p class="card-text text-center" style="font-size:20px">${final}</p>
             </div>
             <ul class="list-group list-group-flush">
              
@@ -404,26 +441,11 @@ let allProducts = [];
             </ul>
             <div class="card-body" style="padding-left:80px">
               <button type="button" class="btn btn-dark">Details</button>
-              <button onclick="addtocart()" type="button" class="btn btn-dark" >Add to Cart</button>
+              <button onclick="addCart(${product.id})" type="button" class="btn btn-dark" >Add to Cart</button>
             </div>
       
         </div>
   `;
-            
-            
-            // card.innerHTML = `
-            //     <img src="${product.image}" alt="${product.title}">
-            //     <div class="card-body">
-            //         <h3 class="card-title">${product.title}</h3>
-            //         <p class="card-price">${product.price}</p>
-            //         <p class="card-description">${product.description}</p>
-            //     </div>
-            //     <div class="card-footer">
-            //         <button>Details</button>
-            //         <button>Add to cart</button>
-                
-            //     </div>
-            // `;
             
             container.appendChild(card);
         });
@@ -441,3 +463,74 @@ let allProducts = [];
 
 
 
+
+
+
+
+//     let cartList=document.querySelector('.addchild')
+// console.log(cartList);
+
+
+// // console.log(cartItem)
+// let div=document.createElement('div')
+// function addCart(id){
+//     let cartItem=allProducts.find((item)=>item.id===id)
+//     //   console.log(item.id,id)
+//       console.log(cartItem)
+//     div.className="div"
+//     div.innerHTML=` <div class="card " >
+//       <h5 class="text-center">item</h5>
+//      <div class="d-flex align-items-center" style="gap: 30px;">
+//       <img src="${allProducts.img}" alt="jewel" style="width: 100px;">
+//       <div>${allProducts.title}</div>
+//       <button class="minus-btn">-</button>
+//       <div class="quantity">1</div>
+//       <button>+</button>
+
+//       <div>${allProducts.price}</div>`
+//       console.log(div);
+//       console.log(cartList);
+      
+      
+//     cartList.appendChild(div)
+//   }
+
+
+    // add to cart
+
+  //   function addToCart(productId) {
+  //     const product = allProducts.find(p => p.id === productId);
+  //     let cart = JSON.parse(localStorage.setItem('cart')) || [];
+
+  //     const existingProduct = cart.find(item => item.id === productId);
+  //     if (existingProduct) {
+  //         existingProduct.quantity += 1;
+  //     } else {
+  //         cart.push({ ...product, quantity: 1 });
+  //     }
+
+  //     localStorage.setItem('cart', JSON.stringify(cart));
+  //     alert('Product added to cart');
+  //     updateCartCount();
+  // }
+
+  // // Update cart count in header
+  // function updateCartCount() {
+  //     const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  //     const cartCount = cart.reduce((total, product) => total + product.quantity, 0);
+  //     document.querySelector('.auth-links a').innerHTML = `<i class="fa-solid fa-cart-plus"></i> &nbsp; Cart (${cartCount})`;
+  // }
+
+  // // Update cart count when page loads
+  // window.onload = updateCartCount;
+
+
+// let cartList=document.getElementById('cartList')
+// // console.log(cartItem)
+// let div=document.createElement('div')
+// function addCart(id){
+//     let cartItem=allProducts.find((item)=>item.id===id)
+//       // console.log(item.id,id)
+//       console.log(cartItem)
+    
+//   }
