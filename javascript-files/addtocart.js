@@ -1,43 +1,56 @@
+// let cart = {};
+// if (localStorage.getItem("cart")) {
+//     cart = JSON.parse(localStorage.getItem("cart"));
+// } else {
+//     alert("Cart is empty");
 
-let cartList=document.getElementById('cartList')
-// console.log(cartList);
+//     text = "Cart is empty. ";
+//     document.getElementById("table-container").innerHTML = text;
 
+//     let goBack = document.createElement("a");
+//     goBack.href = "index.html";
+//     goBack.textContent = "Go back";
+//     document.getElementById("table-container").appendChild(goBack);
+// }
 
-// console.log(cartItem)
-let div=document.createElement('div')
-function addCart(id){
-    let cartItem=allProducts.find((item)=>item.id===id)
-    //   console.log(item.id,id)
-      console.log(cartItem)
-    div.className="div"
-    div.innerHTML=` <div class="card " >
-      <h5 class="text-center">item</h5>
-     <div class="d-flex align-items-center" style="gap: 30px;">
-      <img src="${allProducts.img}" alt="jewel" style="width: 100px;">
-      <div>${allProducts.title}</div>
-      <button class="minus-btn">-</button>
-      <div class="quantity">1</div>
-      <button>+</button>
+// let tbody = document.getElementById("tbody");
 
-      <div>${allProducts.price}</div>`
-    //   console.log(div);
-    //   console.log(cartList);
-      
-      
-    cartList.appendChild(div)
-  }
+// for (let id in cart) {
+//     let item = cart[id];
+
+//     let tr = document.createElement('tr')
+
+//     let title_td = document.createElement('td')
+//     title_td.textContent = item.title
+//     tr.appendChild(title_td)
 
 
-// function updatecart(){
-//     alert('1')
+//     let price_td = document.createElement("td");
+//     price_td.textContent = item.price;
+//     tr.appendChild(price_td);
 
+//     let qty_td = document.createElement("td");
+//     qty_td.textContent = item.qty;
+//     tr.appendChild(qty_td);
+
+//     tbody.appendChild(tr)
 
 // }
 
 
 
+let cart1={}
+if(localStorage.getItem("cart")){
+  cart1=JSON.parse(localStorage.getItem("cart"))
+  console.log(cart1)
 
+}
+else{
+  // alert("cart is empty")
+  text="Cart Is Empty"
+  document.getElementById("empty").innerHTML=text
+}
 
-
-
-
+for(let id in cart){
+  
+}
