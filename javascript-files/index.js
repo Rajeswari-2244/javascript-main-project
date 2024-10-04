@@ -127,7 +127,7 @@ let final=finaltext(para)
    let id=event.target.dataset.id;
    let image=event.target.dataset.image
    if(id in cart){
-    cart[id]=qty++;
+    cart[id].qty++;
    }
    else{
     let cartItem={
