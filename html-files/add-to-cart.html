@@ -9,41 +9,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
-        <div class="container-fluid">
-          <a class="navbar-brand lg-ms-5  commerce fw-bold fs-3" href="./index.html">E-Commerce</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navlink">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./products.html">products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              
-            </ul>
-            <form class="d-flex ms-auto me-5">
-              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-               <!-- <ul class= "navbar-nav ms-auto mb-2 mb-lg-0 ">
-                <li><a href="./add-to-cart.html"><i class="fa-solid fa-cart-shopping text-dark border border-dark p-2 rounded">Cart(0)</i></a></li>
-               </ul> -->
-              <!-- <button class="btn btn-outline-success border border-dark text-dark " type="submit"><i class="fa-solid fa-cart-shopping"></i><a href='./add-to-cart.html' class="text-decoration-none text-dark ms-2">Cart(0)</a></button>  -->
-              <button type="button" class="btn btn-light border border-dark rounded "><i class="fa-solid fa-right-to-bracket"></i><a href='#' class="text-decoration-none text-dark ms-2 ">Login</a></button>
-              <button type="button" class="btn btn-light border border-dark ms-3 rounded"><i class="fa-solid fa-address-card"></i><a href='#' class="text-decoration-none text-dark ms-2">Register</a></button>
-              <button type="button" class="btn btn-light border border-dark ms-3 rounded"><i class="fa-solid fa-cart-shopping"></i><a href='../html-files/add-to-cart.html' class="text-decoration-none text-dark ms-2">Cart(0)</a></button>   
-            </form>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
+    <div class="container-fluid">
+      <a class="navbar-brand lg-ms-5  commerce fw-bold fs-3" href="./index.html">E-Commerce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navlink">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex ms-auto me-5">
+          <a href="#"><button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-right-to-bracket ms-2"></i>Login</button></a>
+          <a href="#"><button type="button" class="btn btn-outline-dark ms-3"><i class="fa-solid fa-user-plus ms-2"></i>Register</button></a>
+         
+          <a href="add-to-cart.html" ><button type="button" class="btn btn-outline-dark ms-3"><i class="fa-solid fa-cart-shopping"></i>Cart<span id="carttt">0</span> price <span id="priceTotal">0</span></button></a>
+        
+        </form>
+      </div>
+    </div>
+  </nav>
+
 
 <!-- ------------------------------------------------------------------------------------------------- -->
 <div class="main_cart" id="empty">
@@ -55,14 +53,14 @@
 
 <div class="container" >
   <div class="row d-flex">
-    <section class="addchild col-lg-8 col-sm-12" id="cartList">
+    <section class="addchild col-lg-8 col-sm-12 " id="cartList" style="gap: 70px;">
     <!-- <div class="card ">
       <h5 class="text-center">item</h5>
      <div class="d-flex align-items-center" style="gap: 30px;">
       <img src="../images/jewel2.jpeg" alt="jewel" style="width: 100px;">
       <div>mens cotton jacket</div>
       <button class="minus-btn">-</button>
-      <div class="quantity">1</div>
+      <input type='text' class='me-3 border-0'style="width:25px" value:"1"
       <button>+</button>
 
       <div>1*$109.95</div> -->

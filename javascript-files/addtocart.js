@@ -71,7 +71,7 @@ for(let id in cart1){
   main2.appendChild(main)
   let main3=document.createElement('h5')
   main3.setAttribute('class','text-center')
-  let main4=document.createTextNode("items")
+  let main4=document.createTextNode(" ")
   main3.appendChild(main4)
   let main5=document.createElement('div')
   main5.setAttribute('class','d-flex align-items-center')
@@ -80,9 +80,11 @@ for(let id in cart1){
   image.setAttribute('src',`${item.image}`)
   image.setAttribute('style','width:100px')
   let category=document.createElement('div')
-  let category1=document.createTextNode('mens cotton jewel')
+  let category1=document.createTextNode(`${item.title}`)
   let btn_cat=document.createElement('button')
   btn_cat.setAttribute('class','minus-btn')
+  // btn_cat.setAttribute("style",'
+  // padding-left:30px')
   let btn_cat1=document.createTextNode('-')
   let quan=document.createElement('div')
   quan.setAttribute('class','quantity')
@@ -113,7 +115,7 @@ for(let id in cart1){
 
 
 }
-
+// for(let id in cart1){
 
 let finalcart=document.getElementById('hello')
 // finalcart.setAttribute('class','amount col-lg-4')
@@ -121,10 +123,11 @@ let final1=document.createElement('div')
 final1.setAttribute('class','card')
 final1.setAttribute('style','width:300px')
 
-final1.innerHTML=`<div class="amount col-lg-3">
+
+final1.innerHTML=`<div class="amount col-lg-3 position-absolute top-0 right-0">
     <div class="card"style="width:300px">
      <div class="text-center">order summary</div>
-     <div class="d-flex"style="justify-content:space-between"><p>products${cart1.length}</p>
+     <div class="d-flex"style="justify-content:space-between"><p>products${products.length}</p>
     <p>$1149</p></div>
      <div class="d-flex"style="justify-content:space-between"><p>summary</p>
     <p>$30</p></div>
@@ -141,3 +144,10 @@ final1.innerHTML=`<div class="amount col-lg-3">
 finalcart.appendChild(final1)
 
 console.log(finalcart)
+// }
+// let countt=0
+// for(let id in cart1){
+//   countt++
+
+  
+// }
