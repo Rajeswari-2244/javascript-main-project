@@ -147,7 +147,7 @@ let final=finaltext(para)
 
 function updateCart(){
   document.getElementById('carttt').textContent=count;
-  document.getElementById("priceTotal").textContent=sum
+  // document.getElementById("priceTotal").textContent=sum
   localStorage.setItem('sum',sum)
   localStorage.setItem("priceTotal",count)
 }
